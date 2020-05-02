@@ -4,11 +4,11 @@ import ProTypes from 'prop-types';
 //start importamos las variables que necesitamos
 import {
 	CLOUD,
-	CLOUDY,
 	SUN,
 	RAIN,
 	SNOW,
-	WINDY,
+	THUNDER,
+	DRIZZlE
 } from './../../../constants/weathers.js';
 //end importamos las variables que necesitamos
 //start css style
@@ -17,11 +17,13 @@ import './styles.css';
 // start ponemos los nombre que pueden tener los iconos
 const icons = {
 	[CLOUD]: "cloud",
-	[CLOUDY]: "cloudy",
 	[SUN]: "day-sunny",
 	[RAIN]:"rain",
 	[SNOW]:"snow",
-	[WINDY]:"windy"
+	[THUNDER]: "day-thunderstore",
+	[DRIZZlE]: "day-showers",
+
+
 }
 // end ponemos los nombre que pueden tener los iconos
 //start funcion para declarar un componente de rect-weathericons que permite ver un icono simplemente

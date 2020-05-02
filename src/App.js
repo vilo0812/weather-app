@@ -1,13 +1,29 @@
-import React from 'react';
-import WeatherLocation from './components/WeatherLocation';
+import React, {Component} from 'react';
+import { Grid,Row,Col } from 'react-flexbox-grid'
+// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import LocationList from './components/LocationList';
 import './App.css';
-
-function App() {
-  return (
+const cities = [
+	    	"Buenos Aires,ar",
+	    	"Bogota,col",
+	    	"Mexico,mex",
+	    	"washington,us",
+	    	"barcelona,es"
+	     ];
+class App extends Component {
+ handleSelectedLocation = city => {
+ 	console.log(`handleSelectedLocation ${city}`);
+ }
+  render() {
+  	return(
     <div className="App">
-    <WeatherLocation />
+	    <LocationList 
+	    	cities={cities}
+	    	onselectedLocation={this.handleSelectedLocation}
+	    />
     </div>
-  );
+    );
+  };
 }
 
 export default App;

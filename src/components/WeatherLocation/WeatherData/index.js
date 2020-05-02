@@ -3,16 +3,16 @@ import WeatherExtraInfo from './WeatherExtraInfo.js';
 import WeatherTemperature from './WeatherTemperature.js';
 
 //start importamos las variables que necesitamos
-import {
-	SUN,
-} from './../../../constants/weathers.js';
+// import {
+// 	SUN,
+// } from './../../../constants/weathers.js';
 //end importamos las variables que necesitamos
 //start css style
 import './styles.css';
 //end css style
 import PropTypes from 'prop-types';
 const WeatherData = ({ data:{ temperature, weatherState, humidity, wind} }) => (
-	<div className="weatherDataCount" >
+	<div className="weatherDataCount">
 		<WeatherTemperature
 		className="temperature"
 		temperature={temperature}
