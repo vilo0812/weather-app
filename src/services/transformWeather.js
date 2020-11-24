@@ -9,7 +9,7 @@ import {
 } from './../constants/weathers.js';
 // start funcion para convertir unidades
 const	getTemp = kelvin => {
-	return Number(convert(kelvin).from("K").to("C").toFixed(2));
+	return Number(convert(kelvin).from("K").to("C").toFixed(0));
 }
 	// end funcion para convertir unidades
 	//start funcion para el estado de el tiempo

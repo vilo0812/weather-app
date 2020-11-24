@@ -5,12 +5,16 @@
   "dependencies": {
     "@material-ui/core": "^4.9.12",
     "convert-units": "^2.3.4",
+    "moment": "^2.26.0",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-flexbox-grid": "^2.1.2",
+    "react-redux": "^7.2.0",
     "react-scripts": "3.2.0",
-    "react-weathericons": "^1.0.4"
+    "react-weathericons": "^1.0.4",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

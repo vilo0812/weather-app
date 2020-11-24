@@ -38,12 +38,10 @@ this.handleUpdateClick();
 			return resolve.json();
 		}).then(data => {
 			const newWeather = transformWeather(data);
-			console.log(newWeather);
-			debugger;
+			// console.log(newWeather);
 			this.setState({
 				data : newWeather
 			});
-			debugger;
 		});
 		
 	}
